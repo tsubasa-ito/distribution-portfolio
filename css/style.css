@@ -183,7 +183,10 @@ main {
 #main-contents {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 40px;
+}
+
+.part-title {
+  text-align: center;
 }
 
 .products {
@@ -221,12 +224,16 @@ main {
 }
 
 .l-pro {
-  flex: 0 0 25%;
-  margin-right: 50px;
+  flex: 1;
+  margin: 20px 0 0 20px;
+}
+
+.pro-name {
+  text-align: center;
 }
 
 .r-pro {
-  flex: 1;
+  flex: 4;
 }
 
 .pro-image > img {
@@ -236,7 +243,23 @@ main {
   border-style: none;
 }
 
-.contact {
+.skill-svg {
+  display: block;
+}
+@media (max-width: 600px) {
+  .skill-svg {
+    margin: 0 auto;
+  }
+}
+
+.devicon-html5-plain-wordmark:before {
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+}
+
+.comment {
   background-color: #f9f9f9;
 }
 

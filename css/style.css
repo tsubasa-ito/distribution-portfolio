@@ -243,6 +243,18 @@ main {
   border-style: none;
 }
 
+@media (min-width: 600px) {
+  .skill-boxes {
+    display: flex;
+  }
+}
+
+@media (min-width: 600px) {
+  .skill-box {
+    width: 33%;
+  }
+}
+
 .skill-svg {
   display: block;
 }

@@ -159,16 +159,32 @@ select {
 }
 /* reset css */
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "M PLUS Rounded 1c", "Hiragino Kaku Cothic ProN", Meiryo,
+    sans-serif;
+  background-color: #fbfbf6;
+}
+
 .h-img {
   width: 100%;
   text-align: center;
   padding: 300px 0px 300px 0px;
-  font-size: 30px;
   letter-spacing: 3px;
 }
 
-body {
-  background-color: #fbfbf6;
+.h-title {
+  font-size: 6.6rem;
+}
+
+.h-subtitle {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  padding-top: 3rem;
 }
 
 main {
@@ -186,7 +202,30 @@ main {
 }
 
 .part-title {
+  padding: 30px 10px;
+  margin: 100px 0 30px 0;
+  background-color: #999999;
+  color: #fff;
+  font-size: 2.15rem;
   text-align: center;
+  letter-spacing: 2px;
+}
+
+.part-title_inner {
+  position: relative;
+  display: inline-block;
+  transform: translateY(-20%);
+}
+
+.part-title_inner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: currentColor;
+  transform: translateX(-50%);
 }
 
 .products {
@@ -196,11 +235,27 @@ main {
   flex-wrap: wrap;
 }
 
-.work-image {
+.product {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
+}
+
+.product:hover,
+.product:focus {
+  opacity: 0.75;
+}
+
+.product-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.product-image {
+  position: absolute;
+  top: 50%;
   max-width: 100%;
-  /* min-width: 25%; */
   width: 100%;
-  height: auto;
+  transform: translateY(-50%);
 }
 /* Responsive */
 @media (min-width: 600px) {
@@ -208,8 +263,28 @@ main {
     justify-content: space-between;
   }
   .product {
-    width: 33%;
+    width: 30%;
+    margin-top: 25px;
   }
+}
+
+.product-body {
+  padding: 15px;
+}
+
+.product-body > :last-child {
+  margin-bottom: 0;
+}
+
+.product-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.product-tech {
+  font-style: italic;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
 }
 
 .about {
@@ -234,6 +309,10 @@ main {
 
 .r-pro {
   flex: 4;
+}
+
+.pro-text {
+  line-height: 2.5;
 }
 
 .pro-image > img {
@@ -273,6 +352,15 @@ main {
 
 .comment {
   background-color: #f9f9f9;
+}
+
+.comment-title {
+  padding-bottom: 10px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #999999;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 #footer {

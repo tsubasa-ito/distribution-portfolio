@@ -203,9 +203,11 @@ body {
   display: inline-block;
   font-size: 6.2rem;
   width: 6.2rem;
-  text-align: center;
-  margin-top: 244px;
   color: #ffa14e;
+}
+
+.header-angle-icon {
+  margin-top: 244px;
 }
 
 /* header finished */
@@ -219,17 +221,16 @@ main {
 }
 
 #main-contents {
-  max-width: 1320px;
+  /* max-width: 1320px; */
   margin: 0 auto;
 }
 
 .part-title {
-  padding: 30px 10px;
-  margin: 100px 0 30px 0;
-  background-color: #999999;
-  color: #fff;
-  font-size: 2.15rem;
+  color: #fbfbf6;
+  font-weight: 800;
+  font-size: 3rem;
   text-align: center;
+  line-height: 45px;
   letter-spacing: 2px;
 }
 
@@ -244,15 +245,19 @@ main {
   position: absolute;
   bottom: -10px;
   left: 50%;
-  width: 80px;
-  height: 1px;
-  background-color: currentColor;
+  width: 120px;
+  height: 5px;
+  background-color: #fbfbf6;
   transform: translateX(-50%);
 }
 
 /* about */
 .about {
-  background-color: #f9f9f9;
+  background-color: #464646;
+}
+
+.about-title {
+  padding-top: 50px;
 }
 
 .profile {
@@ -260,32 +265,61 @@ main {
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin: 60px auto 0 auto;
+  max-width: 1160px;
+  height: 60%;
+  background: #c4c4c4;
+  border-radius: 120px;
 }
 
-.l-pro {
+.l-profile {
   flex: 1;
-  margin: 20px 0 0 20px;
+  margin: 45px 0 0 165px;
 }
 
-.pro-name {
+.profile-img {
+  border-radius: 50%;
+}
+
+.profile-tech {
+  padding-top: 40px;
   text-align: center;
 }
 
-.r-pro {
+.profile-texh-text {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.r-profile {
   flex: 4;
+  margin: 45px 94px 65px 164px;
 }
 
-.pro-text {
-  line-height: 2.5;
+.r-profile-title {
+  font-size: 28px;
+  line-height: 42px;
 }
 
-.pro-image > img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-  border-style: none;
+.r-profile-address {
+  padding-top: 22px;
 }
-/* about finished */
+
+.profile-text {
+  font-size: 18px;
+  line-height: 27px;
+  padding-top: 22px;
+}
+
+.profile-angle {
+  text-align: center;
+  padding: 110px 0 38px 0;
+}
+
+/* .profile-angle-icon {
+  margin-top: 110px;
+} */
+/* _____about finished */
 
 /* skill */
 @media (min-width: 600px) {

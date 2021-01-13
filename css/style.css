@@ -226,7 +226,6 @@ main {
 }
 
 .part-title {
-  color: #fbfbf6;
   font-weight: 800;
   font-size: 3rem;
   text-align: center;
@@ -247,7 +246,6 @@ main {
   left: 50%;
   width: 120px;
   height: 5px;
-  background-color: #fbfbf6;
   transform: translateX(-50%);
 }
 
@@ -257,7 +255,12 @@ main {
 }
 
 .about-title {
+  color: #fbfbf6;
   padding-top: 50px;
+}
+
+.about-title_inner::after {
+  background-color: #fbfbf6;
 }
 
 .profile {
@@ -322,6 +325,15 @@ main {
 /* _____about finished */
 
 /* skill */
+
+.skill-title {
+  padding-top: 50px;
+}
+
+.skill-title_inner::after {
+  background-color: #464646;
+}
+
 @media (min-width: 600px) {
   .skill-boxes {
     display: flex;
@@ -354,6 +366,20 @@ main {
 /* skill finished */
 
 /* work */
+
+.work {
+  background-color: #464646;
+}
+
+.work-title {
+  color: #fbfbf6;
+  padding-top: 50px;
+}
+
+.work-title_inner::after {
+  background-color: #fbfbf6;
+}
+
 .products {
   display: -webkit-flex;
   display: flex;
@@ -426,6 +452,15 @@ main {
 /* work finished */
 
 /* cta */
+
+.cta-title {
+  padding-top: 50px;
+}
+
+.cta-title_inner::after {
+  background-color: #464646;
+}
+
 .cta-area_btn {
   text-align: center;
 }
@@ -474,17 +509,14 @@ main {
 
 /* footer */
 #footer {
-  background-color: #333;
+  background-color: #464646;
   margin-bottom: 0;
 }
 
-.copyright {
-  max-width: 1320px;
-  margin: 0 auto;
-}
-
-.copyright > p {
-  color: #f9f9f9;
+.copyright-text {
+  color: #fbfbf6;
   text-align: center;
+  line-height: 30px;
+  padding: 18px 0;
 }
 /* footer finished */

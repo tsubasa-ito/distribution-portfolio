@@ -179,7 +179,7 @@ main {
 }
 
 #contents {
-  margin: 0px auto 0px auto;
+  margin: 0 auto;
 }
 
 #main-contents {
@@ -245,7 +245,6 @@ main {
 .fa-angle-double-down {
   display: inline-block;
   font-size: 6.2rem;
-  width: 6.2rem;
   color: #ffa14e;
 }
 
@@ -388,7 +387,7 @@ main {
   height: 300px;
 }
 
-/* skill finished */
+/* ________skill finished */
 
 /* work */
 
@@ -405,76 +404,91 @@ main {
   background-color: #fbfbf6;
 }
 
-.products {
+.work-content {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 80px auto 0 auto;
 }
 
-.product {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
-  max-width: 100%;
+.work-wrapper {
+  margin: 2rem auto;
+  width: 30%;
 }
 
-.product:hover,
-.product:focus {
+.work-wrapper:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 7px 34px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+.work-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px #ccc;
+}
+
+.work-card:hover,
+.work-card:focus {
   opacity: 0.75;
 }
 
-.product-wrapper {
-  position: relative;
-  padding-top: 56.25%;
-  overflow: hidden;
-}
-
-.product-image {
-  position: absolute;
-  top: 50%;
+.card-img {
+  border-radius: 5px 5px 0 0;
   max-width: 100%;
-  width: 100%;
-  transform: translateY(-50%);
+  height: auto;
 }
-/* Responsive */
-@media (min-width: 600px) {
-  .products {
-    justify-content: space-between;
-  }
-  .product {
-    width: 30%;
-    margin-top: 25px;
-  }
+.card-content {
+  padding: 8px 20px 20px;
+}
+.card-title {
+  font-size: 1.6em;
+  color: #333;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 768px) {
-  .product {
+.card-tech {
+  padding-top: 1rem;
+}
+
+.card-text {
+  color: #777;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 0.2em;
+  padding-top: 1rem;
+}
+.card-link {
+  text-align: center;
+  border-top: 1px solid #eee;
+  padding: 20px;
+}
+.card-link a {
+  text-decoration: none;
+  color: #4f96f6;
+  margin: 0 10px;
+}
+.card-link a:hover {
+  color: #6bb6ff;
+}
+
+.card-content p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .work-wrapper {
+    width: 85%;
+  }
+  .card {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
   }
 }
-
-.product-body {
-  padding: 15px;
-}
-
-.product-body > :last-child {
-  margin-bottom: 0;
-}
-
-.product-title {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.product-tech {
-  font-style: italic;
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-  word-break: break-all;
-}
-
-/* work finished */
+/* ________work finished */
 
 /* cta */
 

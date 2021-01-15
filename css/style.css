@@ -500,39 +500,81 @@ main {
   background-color: #464646;
 }
 
-.cta-area_btn {
+.cta-body {
+  margin-top: 60px;
+}
+
+.cta-btn {
   text-align: center;
 }
-.cta-area_btn_inner {
+
+.cta-btn_inner {
   display: inline-block;
   width: 300px;
-  max-width: 100%;
+  max-width: 80%;
   padding: 20px 10px;
-  background-color: #4a4957;
+  background-color: #ffa14e;
   border: 2px solid transparent;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 16);
-  color: #fff;
+  color: #fbfbf6;
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   transition: 0.25s;
+  border-radius: 10px;
+  font-size: 1.8rem;
 }
 
-.cta-area_btn_inner:focus,
-.cta-area_btn_inner:hover {
-  background-color: #fff;
+.cta-btn_inner:focus,
+.cta-btn_inner:hover {
+  background-color: #fbfbf6;
   border-color: currentColor;
-  color: #4a4957;
+  color: #ffa14e;
 }
 
-.cta-area_text {
+.cta-text {
   margin-bottom: 40px;
   text-align: center;
+  font-size: 1.8rem;
 }
-/* cta finished */
 
-/* comment */
-/* comment finished */
+.fa-angle-right {
+  padding-left: 1rem;
+  font-size: 2rem;
+}
+
+.cta-sns {
+  display: flex;
+  text-align: center;
+  margin: 5rem auto 0 auto;
+  max-width: 600px;
+  justify-content: space-around;
+}
+
+.fa-twitter,
+.fa-github,
+.fa-instagram {
+  font-size: 5rem;
+  color: #464646;
+}
+
+.fa-twitter:focus,
+.fa-github:focus,
+.fa-instagram:focus,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-instagram:hover {
+  background-color: #fbfbf6;
+  border-color: currentColor;
+  color: #ffa14e;
+}
+
+.fa-angle-double-up {
+  display: inline-block;
+  font-size: 6.2rem;
+  color: #ffa14e;
+}
+/* ________cta finished */
 
 /* footer */
 #footer {
@@ -543,7 +585,8 @@ main {
 .copyright-text {
   color: #fbfbf6;
   text-align: center;
-  line-height: 30px;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
   padding: 18px 0;
 }
-/* footer finished */
+/* ________footer finished */

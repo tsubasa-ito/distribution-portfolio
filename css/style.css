@@ -177,7 +177,6 @@ main {
 }
 
 #main-contents {
-  /* max-width: 1320px; */
   margin: 0 auto;
 }
 
@@ -224,16 +223,12 @@ main {
   font-size: 6rem;
   font-weight: 800;
   line-height: 9rem;
-  /* 不明 */
-  word-break: break-all;
 }
 
 .h-subtitle {
   font-size: 3rem;
   padding-top: 4rem;
   line-height: 4rem;
-  /* 不明 */
-  word-break: break-all;
 }
 
 .fa-angle-double-down {
@@ -245,7 +240,6 @@ main {
 .header-angle-icon {
   margin-top: 244px;
 }
-
 /* header finished */
 
 /* about */
@@ -407,14 +401,6 @@ main {
   font-size: 2.4rem;
 }
 
-/* ???? */
-.devicon-html5-plain-wordmark:before {
-  content: "";
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-}
-
 @media (max-width: 768px) {
   .skill-content {
     display: block;
@@ -435,7 +421,6 @@ main {
 /* ________skill finished */
 
 /* work */
-
 .work {
   background-color: #464646;
 }
@@ -536,7 +521,6 @@ main {
 /* ________work finished */
 
 /* cta */
-
 .cta-title {
   padding-top: 50px;
 }

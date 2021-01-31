@@ -381,6 +381,23 @@ main {
   height: 300px;
 }
 
+@media (max-width: 768px) {
+  .skill-content {
+    display: block;
+  }
+  .l-skill-boxs {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .tech-title_text {
+    padding: 0;
+  }
+  .fa-star,
+  .fa-star-half-alt {
+    font-size: 1rem;
+  }
+}
+
 /* ________skill finished */
 
 /* work */

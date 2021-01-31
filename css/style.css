@@ -288,7 +288,7 @@ main {
   text-align: center;
 }
 
-.profile-texh-text {
+.profile-tech-text {
   font-size: 24px;
   line-height: 36px;
 }
@@ -311,6 +311,40 @@ main {
   font-size: 18px;
   line-height: 27px;
   padding-top: 22px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    color: #fbfbf6;
+  }
+  .profile {
+    display: block;
+    background-color: #464646;
+  }
+  .l-profile {
+    flex: auto;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  .r-profile {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .profile-tech-text {
+    font-size: 18px;
+  }
+  .r-profile-title {
+    text-align: center;
+  }
+  .profile-text {
+    text-align: center;
+  }
+  .profile-image-content {
+    text-align: center;
+  }
+  .r-profile {
+    flex: auto;
+  }
 }
 
 /* _____about finished */

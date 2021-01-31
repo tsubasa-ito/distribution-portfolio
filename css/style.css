@@ -532,6 +532,13 @@ main {
   font-size: 1.8rem;
 }
 
+@media (max-width: 768px) {
+  .cta-text {
+    width: 80%;
+    margin: 0 auto 40px;
+  }
+}
+
 .fa-angle-right {
   padding-left: 1rem;
   font-size: 2rem;
